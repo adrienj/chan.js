@@ -1,0 +1,1 @@
+!function(w){var s={},y=-1;w.chan={send:function(n,d,i){if(!s[n])return;for(i=0,l=s[n].length;i<l;i++){s[n][i].a(d)}return this},on:function(n,c){return(s[n]=s[n]||[]).push({x:++y,a:c}),y},unsubscribe:function(x,c,o,i){for(o in s){for(i in s[o]){if(s[o][i].x===x){s[o].splice(i,1);c&&c.apply(this)}}}return this}}}(this);
